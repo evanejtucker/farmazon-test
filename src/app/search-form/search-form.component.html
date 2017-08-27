@@ -7,12 +7,12 @@
   </div> -->
   
   <h4>What are you in the market for?</h4>
-  <select class="browser-default center" id="box" >
+  <select (change)="onChange($event.target.value)" class="browser-default center">
     <option value="" disabled selected>Choose your option</option>
-    <option *ngFor="let veggie of vegtables" value="{{veggie}}">{{veggie}}</option>
+    <option *ngFor="let veggie of vegtables" [value]="veggie.name">{{veggie.name}}</option>
   </select>
 
 
-  <button (click)="clickSearch()" type="submit" class="btn btn-success submit-button">Search</button>
+  <button (click)="clickSearch($event)" type="submit" class="btn btn-success submit-button">Search</button>
 
 </form>
