@@ -14,5 +14,13 @@
 	{
 		"id": "4",
 		"name": "peppers"
+	},
+	{
+		"id": "5",
+		"name": "pumpkins"
+	},
+	{
+		"id": "6",
+		"name": "squash"
 	}
 ]
